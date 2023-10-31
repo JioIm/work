@@ -1,0 +1,309 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+}
+
+/* .title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.title p {
+    display: block;
+    line-height: 30px;
+    letter-spacing: -0.5pt;
+    word-break: keep-all;
+    font-size: 18px;
+    text-align: center;
+    color: #444; 
+    padding: 25px 0 0 0;
+} */
+
+.header {
+    line-height: 100px;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 60px;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 2px;
+    height: 12px;
+    background: #ddd;
+
+    transform: translate(-50%, -50%);
+}
+
+.mainSlide .itm01 {
+    height: 800px;
+    background: url(../images/banner_img001.jpg) no-repeat center center/cover;
+}
+
+.mainSlide .itm02 {
+    height: 800px;
+    background: url(../images/banner_img002.jpg) no-repeat center center/cover;
+}
+
+.mainSlide .itm03 {
+    height: 800px;
+    background: url(../images/banner_img003.jpg) no-repeat center center/cover;
+}
+
+.mainSlide .itm {
+    position: relative;
+}
+
+.mainSlide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainSlide .slogan strong {
+    display: block;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+    color: #fff;
+    text-shadow: 0 0 7px #444;
+    line-height: 55px;
+}
+
+.mainSlide .slogan p {
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1800px;
+    width: 100%;
+}
+
+.mainVisual .arrows i {
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #555;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 #000;
+    transform: translate(0, -50%);
+    cursor: pointer;
+
+}
+
+.mainVisual .arrows .left {
+    left: 0;
+}
+
+
+.mainVisual .arrows .right {
+    right: 0;
+}
+
+.mainVisual .menu {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    gap: 8px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainVisual .menu a {
+    position: relative;
+    display: block;
+    padding: 0 40px 0 0;
+    height: 24px;
+    color: #fff;
+}
+
+.mainVisual .menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+}
+
+.mainVisual .menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #ff281e;
+}
+
+.mainVisual .menu li.on a::after {
+    transition: 3s;
+    width: 100%;
+}
+
+.mainVisual .num {
+    position: absolute;
+    top: 80px;
+    left: 60%;
+    margin: 0 0 0 585px;
+
+    transform: translate(-100%, 0);
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+    text-shadow: 1px 1px 0 #000;
+}
+
+.main2 {
+    padding: 120px 0;
+}
+
+.main2 .title .img_box2 {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.main2 .title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.main2 .title p {
+    display: block;
+    line-height: 30px;
+    letter-spacing: -0.5pt;
+    word-break: keep-all;
+    font-size: 18px;
+    text-align: center;
+    color: #444; 
+    padding: 25px 0 0 0;
+}
+
+.mainEvent {
+    padding: 120px 0;
+    background: #ff281e;
+}
+
+.mainEvent .content .img_box3 {
+    text-align: center;
+}
+
+.mainEvent .content h3 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mainEvent .productSlide {
+    margin: 0 -5px;
+}
+
+.mainEvent .content figure {
+    background: #fff;
+    text-align: center;
+    padding: 0 0 50px 0;
+    border-radius: 36px;
+    margin: 0 15px;
+}
+
+.mainEvent .content .img_box {
+    margin: 20px 0 40px 0;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.mainEvent .content strong {
+    display: block;
+    margin: 0 0 14px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mainEvent .content p {
+    line-height: 20px;
+    word-break: keep-all;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footer .sns {
+    padding: 16px 0;
+    text-align: center;
+}
+
+.footer .sns i {
+    color: #ff281e;
+    font-size: 32px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.toTop {
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 999;
+}
+.toTop i {
+    background: #ff281e;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
