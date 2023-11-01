@@ -51,12 +51,37 @@ $(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
 
-    $('.mainEvent .productSlide').slick({
+    // $('.mainEvent .productSlide').slick({
+    //     slidesToShow: 3,
+    // });
+
+    $('.productSlide').slick({
         slidesToShow: 3,
+        arrows: false
     });
 
-    $('.toTop').on('click', function(){
-        $('html, body').animate({scrollTop:0})
-    })
+    $('.mainEvent .arrows .left').on('click', function(){
+        //슬라이드가 뒤로 가 : slick 홈페이지 참조.
+        $('.productSlide').slick('slickPrev')
+    });
 
-});
+    $('.mainEvent .arrows .right').on('click', function(){
+        //슬라이드가 뒤로 가 : slick 홈페이지 참조.
+        $('.productSlide').slick('slickNext')
+    });
+
+
+    $('.toTop').on('click', function(){
+        $('html, body').animate({scrollTop:0}, 1000)
+    });
+
+    $(window).on('scroll', function(){
+        const sct = $(window).scrollTop();
+        if(sct > 200) {
+            $('.toTop').addClass('on');
+        } else {
+            $('.toTop').removeClass('on');
+        }
+    });
+
+})

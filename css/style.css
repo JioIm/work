@@ -234,6 +234,7 @@
 }
 
 .mainEvent {
+    position: relative;
     padding: 120px 0;
     background: #ff281e;
 }
@@ -243,7 +244,7 @@
     padding: 0 0 10px 0;
 }
 
-.mainEvent .content h3 {
+.mainEvent .content h2 {
     font-size: 60px;
     font-weight: 700;
     text-align: center;
@@ -284,6 +285,37 @@
     min-height: 40px;
 }
 
+.mainEvent .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1400px;
+    width: 100%;
+}
+
+.mainEvent .arrows i {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 40px;
+    padding: 10px;
+    transform: translate(0, 50%);
+    cursor: pointer;
+
+}
+
+.mainEvent .arrows .left {
+    left: 0;
+}
+
+
+.mainEvent .arrows .right {
+    right: 0;
+}
+
+
 .footer .sns {
     padding: 16px 0;
     text-align: center;
@@ -301,6 +333,19 @@
     right: 100px;
     bottom: 100px;
     z-index: 999;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.5s;
+
+    background: transparent;
+    border: none;
+}
+
+.toTop.on {
+    visibility: visible;
+    opacity: 1;
 }
 .toTop i {
     background: #ff281e;
@@ -310,3 +355,4 @@
     color: #fff;
     cursor: pointer;
 }
+
