@@ -61,6 +61,42 @@
     transform: translate(-50%, -50%);
 }
 
+.gnb>ul>li .sub {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    z-index: 2;
+
+    padding: 0 16px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+
+    display: none;
+}
+
+.gnb>ul>li .sub::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.gnb>ul>li .sub>li {
+    position: relative;
+    background: #fff;
+}
+
+.gnb>ul>li:hover .sub {
+    display: block;
+}
+
 .mainSlide .itm01 {
     height: 800px;
     background: url(../images/banner_img001.jpg) no-repeat center center/cover;
@@ -209,7 +245,8 @@
     padding: 120px 0;
 }
 
-.main2 .title .img_box2 {
+
+.main2 .title .img_box02 {
     text-align: center;
     padding: 20px 0 40px 0;
 }
@@ -239,10 +276,22 @@
     background: #ff281e;
 }
 
-.mainEvent .content .img_box3 {
+.mainEvent .content .img_box03 {
     text-align: center;
     padding: 0 0 10px 0;
 }
+
+.mainEvent .img_box {
+    margin: 0 0 24px 0;
+    overflow: hidden;
+}
+.mainEvent .img_box img {
+    transition: 0.5s;
+}
+.mainEvent .img_box:hover img {
+    transform: scale(1.2);
+}
+
 
 .mainEvent .content h2 {
     font-size: 60px;
@@ -315,15 +364,49 @@
     right: 0;
 }
 
+.footer {
+    padding: 100px 0;
+    color: #ff281e;
+    background-color: #ffe68c;
+
+}
+
+.footer .inner {
+    display: flex;
+    text-align: left;
+}
+
+.footer .logo {
+    margin: 0 50px 0 20px;
+}
+
+.footer .address {
+    padding: 0 100px 0 60px;
+    vertical-align: top;
+    padding: 0 15px 0 0;
+    line-height: 150%;
+}
+
+.footer ul>li strong {
+    color: #ff281e;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 15px;
+}
+.footer ul>li span{
+    color: #ff281e;
+    font-size: 15px;
+    font-weight: 400;
+}
 
 .footer .sns {
-    padding: 16px 0;
+    margin: 0 0 0 auto;
+    padding:16px 0;
     text-align: center;
 }
 
 .footer .sns i {
-    color: #ff281e;
-    font-size: 32px;
+    font-size: 40px;
     padding: 8px;
     border-radius: 50%;
 }

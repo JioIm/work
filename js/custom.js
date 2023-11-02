@@ -51,6 +51,7 @@ $(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
 
+
     // $('.mainEvent .productSlide').slick({
     //     slidesToShow: 3,
     // });
